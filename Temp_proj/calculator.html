@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+        .todolist tr{
+            border:1px solid gray;
+        }
+        .todolist td{
+            border:1px solid gray;
+        }
+    </style>
+  </head>
+  <body>
+    <table class="calculator">
+      <tbody>
+        <tr>
+          <td colspan="3">
+            <p class="display" id="display"></p>
+          </td>
+          <td>
+            <button type="button" class="btn btn-primary operator">C</button>
+          </td>
+        </tr>
+        <tr>
+          <td><button type="button" class="btn btn-secondary">7</button></td>
+          <td><button type="button" class="btn btn-secondary">8</button></td>
+          <td><button type="button" class="btn btn-secondary">9</button></td>
+          <td>
+            <button type="button" class="btn btn-secondary operator">/</button>
+          </td>
+        </tr>
+        <tr>
+          <td><button type="button" class="btn btn-secondary">6</button></td>
+          <td><button type="button" class="btn btn-secondary">5</button></td>
+          <td><button type="button" class="btn btn-secondary">4</button></td>
+          <td>
+            <button type="button" class="btn btn-secondary operator">*</button>
+          </td>
+        </tr>
+        <tr>
+          <td><button type="button" class="btn btn-secondary">3</button></td>
+          <td><button type="button" class="btn btn-secondary">2</button></td>
+          <td><button type="button" class="btn btn-secondary">1</button></td>
+          <td>
+            <button type="button" class="btn btn-secondary operator">-</button>
+          </td>
+        </tr>
+        <tr>
+          <td><button type="button" class="btn btn-secondary">0</button></td>
+          <td colspan="2">
+            <button type="button" class="btn btn-warning">=</button>
+          </td>
+          <td>
+            <button type="button" class="btn btn-secondary operator">+</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br/>
+
+    <h3>To Do List</h3>
+
+    <div>
+        <input type="text" id="item" placeholder="Enter Item Name"/>
+        <input type="number" id="Qty" placeholder="Item Qty" />
+        <button type="button" id="custbtn" onclick="addProduct()">Add</button>
+    </div>
+
+    <table class="todolist">
+        <thead>
+            <tr>
+                <th>SL NO</th>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="htmlcode">
+            
+        </tbody>
+    </table>
+
+    <script>
+      // const displayVal = document.getElementById("display");
+      // let Expression="";
+      // const buttons = document.querySelectorAll(".btn");
+
+      // buttons.forEach((button) => {
+      //   button.addEventListener("click", () => {
+      //     const value = button.textContent;
+
+      //     if (value === "C") {
+      //       Expression="";
+      //       displayVal.innerHTML="";
+      //     }
+      //     else if(value==="=")
+      //     {
+      //       const expval=eval(Expression);
+      //       displayVal.innerText=expval;
+      //     }
+      //     else{
+      //       Expression=Expression+value;
+      //       displayVal.innerText=Expression;
+      //     }
+      //   });
+      // });
+
+      // var Items=[];
+
+      // document.getElementById('custbtn').addEventListener("click",(e)=>{
+      //   debugger
+      //       const itemName=document.getElementById("item").value;
+      //       const Qty=document.getElementById("Qty").value;
+            
+      //       Items.push({"ItemName":itemName,"ItemQty":Qty})
+         
+      //       localStorage.setItem("ItemData",JSON.stringify(Items));
+
+      // });
+
+
+      let products=[];
+
+      const addProduct=()=>{
+        debugger
+
+          const name=document.getElementById("item").value;
+          const Qty=document.getElementById("Qty").value;
+
+          const duplicate=products.some(p=>p.name===name);
+          if(duplicate)
+          {
+            alert("Product Already Exist");
+            
+          }
+          else{
+
+          products=[...products,{name,Qty}];
+
+          renderHTML();
+          }
+          document.getElementById("item").value="";
+            document.getElementById("Qty").value="";
+      };
+
+      const RemoveProduct=(name)=>{
+        debugger
+          products=products.filter(n=>n.name!=name);
+          renderHTML();
+      };
+
+      function renderHTML()
+      {
+        let HtmlCode="";
+
+          products.map((item,index)=>{
+                HtmlCode=HtmlCode+`<tr>
+                  <td>${item.name}</td>
+                  <td>${item.Qty}</td>
+                  <td><button onclick="RemoveProduct('${item.name}')">Remove</button></td>
+                  </tr>`;
+                  console.log(HtmlCode);
+          }).join("");
+
+          document.getElementById('htmlcode').innerHTML=HtmlCode;
+      }
+
+    </script>
+  </body>
+</html>

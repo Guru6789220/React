@@ -1,0 +1,19 @@
+.custom-navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.custom-navbar .navbar-brand{
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+.custom-navbar .nav-link{
+    padding: 0.5rem 0.75rem;
+}
+
+.custom-navbar .form-control{
+    min-width: 220px;
+}

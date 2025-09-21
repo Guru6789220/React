@@ -1,0 +1,9 @@
+.logincard{
+    width:50%;
+
+}
+.cust-container{
+    display: flex;
+    justify-content: center;
+    margin:2% 0% 0% 0%;
+}

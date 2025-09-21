@@ -1,0 +1,22 @@
+{
+  "StudentDetails": [
+    {
+      "id": "d6f4",
+      "ID": 2,
+      "Name": "GUNA",
+      "FatherName": "GUNA",
+      "MobileNo": "9865321467",
+      "Email": "Guna@gmail.com",
+      "Address": "Banglore-97"
+    },
+    {
+      "id": "8348",
+      "ID": 2,
+      "Name": "GUNA",
+      "FatherName": "GUNA",
+      "MobileNo": "9865321467",
+      "Email": "Guna@gmail.com",
+      "Address": "Banglore-97"
+    }
+  ]
+}

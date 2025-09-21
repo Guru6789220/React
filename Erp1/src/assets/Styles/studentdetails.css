@@ -1,0 +1,15 @@
+.table th,td,tr{
+    border:1px solid rgba(128, 128, 128, 0.582);
+    padding:8px !important;
+}
+.customthead th{
+    background-color: black;
+    border:1px solid white;
+    color:white;
+}
+.grdcontainer{
+    border:1px solid navy;
+    overflow: auto;
+}
+
+
