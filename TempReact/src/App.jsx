@@ -1,33 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useEffect, useState } from 'react'
 import './App.css'
+import ItemList from './Pages/ItemList'
+import NewItem from './Pages/NewItem'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [Items, setItems] = useState(JSON.parse(localStorage.getItem("Grocery")));
 
+  useEffect(()=>{
+    localStorage.setItem("Grocery",JSON.stringify(Items));
+  },[Items])
+  
+  const handleCheck=(Id)=>{
+      setItems(prev=>prev.map((items)=>items.Id==Id?{...items,Status:!items.Status}:items))
+  }
+  
+  const handleDelete=(Id)=>{
+      setItems(Items.filter((i)=>i.Id!==Id));
+  }
+  
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <NewItem Items={Items} setItems={setItems} />
+      <ItemList 
+      Items={Items}
+      handleCheck={handleCheck}
+      handleDelete={handleDelete}
+      />
     </>
   )
 }
