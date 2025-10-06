@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import ItemList from './Pages/ItemList'
 import NewItem from './Pages/NewItem'
+import ColorPicker from './Pages/colorPicker'
 
 function App() {
-  const [count, setCount] = useState(0)
-  const [Items, setItems] = useState(JSON.parse(localStorage.getItem("Grocery")));
+  const [Items, setItems] = useState(JSON.parse(localStorage.getItem("Grocery"))||[]);
 
   useEffect(()=>{
     localStorage.setItem("Grocery",JSON.stringify(Items));
@@ -27,6 +27,7 @@ function App() {
       handleCheck={handleCheck}
       handleDelete={handleDelete}
       />
+      <ColorPicker/>
     </>
   )
 }
