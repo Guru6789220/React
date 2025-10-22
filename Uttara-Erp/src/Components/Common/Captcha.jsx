@@ -1,32 +1,22 @@
 import "../../assets/Styles/Captcha.css";
 import { FaArrowRotateRight } from "react-icons/fa6";
-import { useEffect, useState } from "react";
+import { useEffect, useState,forwardRef,useImperativeHandle } from "react";
 
-const Captcha = ({Validatecaptcha}) => {
+const Captcha =forwardRef ((prop,ref) => {
   const generateCaptcha = () => {
-    const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
-    let code = "";
-    for (let i = 0; i < 8; i++) {
-      code += chars.charAt(Math.floor(Math.random() * chars.length));
-    }
+    var code=Math.random().toString(36).substring(2,8).toUpperCase();
     return code;
   };
 
   const [Captcha, setcaptcha] = useState(() => generateCaptcha());
-  const [ECaptcha, setECaptcha] = useState("");
+  const[UserInput,setUserInput]=useState("");
 
-const handleValidatecaptcha=(e)=>{
-const{value}=e.target;
-setECaptcha(value);
-  if(value===Captcha){
-    Validatecaptcha(true);
-    alert("Captcha Matched");
-  }
-  else{
-    Validatecaptcha(false);
-  }
-}
-
+  useImperativeHandle(ref,()=>({
+    validateCaptcha:()=>{
+        const isvalid=UserInput.toLowerCase()===Captcha.toLowerCase();
+        return isvalid;
+    }
+  }));
   return (
     <>
       <span className="d-flex">
@@ -37,9 +27,9 @@ setECaptcha(value);
           onClick={(e)=>setcaptcha(generateCaptcha())}
         />
       </span>
-      <input type="text" className="form-control mt-2" placeholder="Captcha" name="ECaptcha" value={ECaptcha} onChange={handleValidatecaptcha} />
+      <input type="text" className="form-control mt-2" placeholder="Captcha"  value={UserInput} onChange={(e)=>setUserInput(e.target.value)} />
     </>
   );
-};
+});
 
 export default Captcha;

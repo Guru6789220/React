@@ -1,11 +1,15 @@
-import { useState } from "react";
+import { useState,useRef } from "react";
 import "../assets/Styles/Login.css";
 import { FaEye } from "react-icons/fa6";
 import { FaEyeSlash } from "react-icons/fa6";
 import Captcha from "../Components/Common/Captcha";
+import { toast } from "react-toastify";
+import { useNavigate} from 'react-router-dom';
 
 const Login = () => {
+    const navigate=useNavigate();
   const [passwordVisible, setPasswordVisible] = useState(false);
+  const captchaRef=useRef(null);
 
 
   const [formData,setformData]=useState({
@@ -15,9 +19,24 @@ const Login = () => {
   });
 
   const handleSubmit=(e)=>{
+    debugger
     e.preventDefault();
 
-    const {name,value}=e.target;
+    if(formData.username==="")
+    {
+      toast.error("User Name is required");
+      return;
+    }
+    if(formData.password==="")
+    {
+      toast.error("Password is required");
+      return;
+    }
+    if(!captchaRef.current.validateCaptcha())
+    {
+      toast.error("Invalid Captcha");
+      return;
+    }
   }
 
   const TooglePassword=()=>{
@@ -68,19 +87,19 @@ const Login = () => {
           </div>
 
           <div className="row">
-            <div className="col-lg-10 text-end">
-              <p>Forget Password ?</p>
+            <div className="col-lg-11 text-end">
+              <button type="button" className="btn btn-link" onClick={()=>navigate("/ForgetPassword")}>Forgot Password?</button>
             </div>
           </div>
           <div className="row">
             <div className="col-lg-10 mx-auto">
-                 <Captcha Validatecaptcha={(e)=>(setformData((prev)=>({...prev,isvalidcaptcha:e})))}/>
+                 <Captcha ref={captchaRef} />
             </div>
           </div>
            
           <div className="mt-2 row">
             <div className="col-lg-12 text-center">
-              <button className="btn btn-primary">Login</button>
+              <button type="submit" className="btn btn-primary">Login</button>
             </div>
           </div>
 
