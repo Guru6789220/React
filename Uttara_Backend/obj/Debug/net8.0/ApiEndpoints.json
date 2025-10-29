@@ -2,14 +2,30 @@
   {
     "ContainingType": "Uttara_Backend.Controllers.LoginController",
     "Method": "ForgetPassword",
-    "RelativePath": "api/Login",
+    "RelativePath": "api/Login/ForgetPassword",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "details",
-        "Type": "Uttara_Backend.Models.ForgetPassword",
+        "Type": "Uttara_Backend.Models.DTO.ForgetPassword",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Uttara_Backend.Controllers.LoginController",
+    "Method": "Login",
+    "RelativePath": "api/Login/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "logindata",
+        "Type": "Uttara_Backend.Models.DTO.Login",
         "IsRequired": true
       }
     ],

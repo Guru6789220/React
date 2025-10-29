@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Login": {
+    "/api/Login/ForgetPassword": {
       "post": {
         "tags": [
           "Login"
@@ -25,6 +25,37 @@
             "application/*+json": {
               "schema": {
                 "$ref": "#/components/schemas/ForgetPassword"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Login/Login": {
+      "post": {
+        "tags": [
+          "Login"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Login"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Login"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Login"
               }
             }
           }
@@ -80,8 +111,7 @@
     "schemas": {
       "ForgetPassword": {
         "required": [
-          "emailId",
-          "newPassword"
+          "emailId"
         ],
         "type": "object",
         "properties": {
@@ -91,6 +121,24 @@
             "type": "string"
           },
           "newPassword": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Login": {
+        "required": [
+          "password",
+          "userName"
+        ],
+        "type": "object",
+        "properties": {
+          "userName": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "password": {
             "minLength": 1,
             "type": "string"
           }

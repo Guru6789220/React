@@ -3,40 +3,48 @@
   "WorkspaceRootPath": "E:\\React\\Uttara_Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|e:\\react\\uttara_backend\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|e:\\react\\uttara_backend\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|solutionrelative:services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|e:\\react\\uttara_backend\\models\\dto\\authdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|solutionrelative:models\\dto\\authdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|e:\\react\\uttara_backend\\services\\iservices\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|solutionrelative:services\\iservices\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|e:\\react\\uttara_backend\\models\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|solutionrelative:models\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|e:\\react\\uttara_backend\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|solutionrelative:models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|e:\\react\\uttara_backend\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|e:\\react\\uttara_backend\\dataaccess\\dcconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|solutionrelative:dataaccess\\dcconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|e:\\react\\uttara_backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|e:\\react\\uttara_backend\\models\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|solutionrelative:models\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|e:\\react\\uttara_backend\\models\\dto\\forgetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|solutionrelative:models\\dto\\forgetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|e:\\react\\uttara_backend\\models\\dto\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|solutionrelative:models\\dto\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|e:\\react\\uttara_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|e:\\react\\uttara_backend\\models\\forgetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|solutionrelative:models\\forgetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|e:\\react\\uttara_backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|e:\\react\\uttara_backend\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DADF419A-4415-42A9-A29C-D6C1E757F32F}|Uttara_Backend.csproj|solutionrelative:models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,53 +54,20 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 9,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Users.cs",
-              "DocumentMoniker": "E:\\React\\Uttara_Backend\\Models\\Users.cs",
-              "RelativeDocumentMoniker": "Models\\Users.cs",
-              "ToolTip": "E:\\React\\Uttara_Backend\\Models\\Users.cs",
-              "RelativeToolTip": "Models\\Users.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAIwAcAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T16:38:22.495Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DCConnect.cs",
-              "DocumentMoniker": "E:\\React\\Uttara_Backend\\DataAccess\\DCConnect.cs",
-              "RelativeDocumentMoniker": "DataAccess\\DCConnect.cs",
-              "ToolTip": "E:\\React\\Uttara_Backend\\DataAccess\\DCConnect.cs",
-              "RelativeToolTip": "DataAccess\\DCConnect.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T16:25:37.857Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Response.cs",
-              "DocumentMoniker": "E:\\React\\Uttara_Backend\\Models\\Response.cs",
-              "RelativeDocumentMoniker": "Models\\Response.cs",
-              "ToolTip": "E:\\React\\Uttara_Backend\\Models\\Response.cs",
-              "RelativeToolTip": "Models\\Response.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "E:\\React\\Uttara_Backend\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
+              "ToolTip": "E:\\React\\Uttara_Backend\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Controllers\\LoginController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwDAAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T16:10:17.785Z",
+              "WhenOpened": "2025-10-22T14:32:45.036Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
@@ -103,75 +78,133 @@
               "RelativeDocumentMoniker": "Services\\IServices\\ILoginService.cs",
               "ToolTip": "E:\\React\\Uttara_Backend\\Services\\IServices\\ILoginService.cs",
               "RelativeToolTip": "Services\\IServices\\ILoginService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-22T15:59:29.343Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AuthDTO.cs",
+              "DocumentMoniker": "E:\\React\\Uttara_Backend\\Models\\DTO\\AuthDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTO\\AuthDTO.cs",
+              "ToolTip": "E:\\React\\Uttara_Backend\\Models\\DTO\\AuthDTO.cs",
+              "RelativeToolTip": "Models\\DTO\\AuthDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T16:56:18.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Login.cs",
+              "DocumentMoniker": "E:\\React\\Uttara_Backend\\Models\\DTO\\Login.cs",
+              "RelativeDocumentMoniker": "Models\\DTO\\Login.cs",
+              "ToolTip": "E:\\React\\Uttara_Backend\\Models\\DTO\\Login.cs",
+              "RelativeToolTip": "Models\\DTO\\Login.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T06:50:14.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Users.cs",
+              "DocumentMoniker": "E:\\React\\Uttara_Backend\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "Models\\Users.cs",
+              "ToolTip": "E:\\React\\Uttara_Backend\\Models\\Users.cs",
+              "RelativeToolTip": "Models\\Users.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAIwAcAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T16:38:22.495Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DCConnect.cs",
+              "DocumentMoniker": "E:\\React\\Uttara_Backend\\DataAccess\\DCConnect.cs",
+              "RelativeDocumentMoniker": "DataAccess\\DCConnect.cs",
+              "ToolTip": "E:\\React\\Uttara_Backend\\DataAccess\\DCConnect.cs",
+              "RelativeToolTip": "DataAccess\\DCConnect.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T16:25:37.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Response.cs",
+              "DocumentMoniker": "E:\\React\\Uttara_Backend\\Models\\Response.cs",
+              "RelativeDocumentMoniker": "Models\\Response.cs",
+              "ToolTip": "E:\\React\\Uttara_Backend\\Models\\Response.cs",
+              "RelativeToolTip": "Models\\Response.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAcwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T16:10:17.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "LoginService.cs",
               "DocumentMoniker": "E:\\React\\Uttara_Backend\\Services\\LoginService.cs",
               "RelativeDocumentMoniker": "Services\\LoginService.cs",
               "ToolTip": "E:\\React\\Uttara_Backend\\Services\\LoginService.cs",
               "RelativeToolTip": "Services\\LoginService.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAQwDIAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAwwE0AAACdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-22T15:59:05.473Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "ForgetPassword.cs",
-              "DocumentMoniker": "E:\\React\\Uttara_Backend\\Models\\ForgetPassword.cs",
-              "RelativeDocumentMoniker": "Models\\ForgetPassword.cs",
-              "ToolTip": "E:\\React\\Uttara_Backend\\Models\\ForgetPassword.cs",
-              "RelativeToolTip": "Models\\ForgetPassword.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
+              "DocumentMoniker": "E:\\React\\Uttara_Backend\\Models\\DTO\\ForgetPassword.cs",
+              "RelativeDocumentMoniker": "Models\\DTO\\ForgetPassword.cs",
+              "ToolTip": "E:\\React\\Uttara_Backend\\Models\\DTO\\ForgetPassword.cs",
+              "RelativeToolTip": "Models\\DTO\\ForgetPassword.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-22T14:34:51.222Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "E:\\React\\Uttara_Backend\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
-              "ToolTip": "E:\\React\\Uttara_Backend\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "Controllers\\LoginController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAQwBsAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T14:32:45.036Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\React\\Uttara_Backend\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "E:\\React\\Uttara_Backend\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAYwCkAAAB+AAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T14:17:48.226Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T14:17:48.226Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\React\\Uttara_Backend\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "E:\\React\\Uttara_Backend\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-22T14:13:32.423Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T14:13:32.423Z"
             }
           ]
         }

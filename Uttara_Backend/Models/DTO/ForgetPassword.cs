@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Uttara_Backend.Models
+namespace Uttara_Backend.Models.DTO
 {
     public class ForgetPassword
     {
