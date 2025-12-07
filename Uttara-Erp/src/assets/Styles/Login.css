@@ -16,3 +16,10 @@
   height: 20px; /* Adjust size as needed */
   pointer-events: visible; /* Prevent logo from blocking clicks */
 }
+
+.LoginContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
