@@ -4,7 +4,7 @@ import { FaEye } from "react-icons/fa6";
 import { FaEyeSlash } from "react-icons/fa6";
 import Captcha from "../Components/Common/Captcha";
 import { toast } from "react-toastify";
-import { replace, useNavigate } from "react-router-dom";
+import { Navigate, replace, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Context/AuthContext";
 import api from "../Hooks/api.js";
 import APIErrors from "./APIErrors.js";
@@ -76,13 +76,14 @@ const Login = () => {
         );
 
         if (response.data.success && response.status === 200) {
+          console.log(response.data.data.token);
           setuser({
-            Token: response.data.token,
+            TokenExpires: response.data.data.expires,
             UserId: 1,
             Roles: [1, 2, 3],
           });
 
-          toast.success(response.data.message);
+          navigate("/Home",{replace:true});
         }
       } catch (err) {
         const res = err?.response;
