@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Uttara_Backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e8079246473345170eae774345bdb693f174397")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c538a6297a309f37850ab6681df64d51c95b52df")]
 [assembly: System.Reflection.AssemblyProductAttribute("Uttara_Backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Uttara_Backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

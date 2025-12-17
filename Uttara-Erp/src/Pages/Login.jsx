@@ -8,6 +8,7 @@ import { Navigate, replace, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Context/AuthContext";
 import api from "../Hooks/api.js";
 import APIErrors from "./APIErrors.js";
+import { useMutation } from "@tanstack/react-query";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -35,6 +36,43 @@ const Login = () => {
     });
   }, [formData.username, formData.password]);
 
+  const loginMutation=useMutation({
+    mutationFn: async ({username,password})=>{
+      const response=await api.post("Login/Login",{
+        username:username,
+        password:password
+      },{
+        headers:{"Content-Type":"Application/json"}
+      });
+
+      return response.data;
+    },
+    onSuccess:(data)=>{
+      debugger
+      if(data.success)
+      {
+        setuser({
+             TokenExpires: data.data.expires,
+             UserId: 1,
+             Roles: [1, 2, 3],
+           });
+
+          navigate("/Home",{replace:true});
+      }
+    },
+    onError:(error)=>{
+      debugger
+      if (error.response) {
+      APIErrors({ response: error.response });
+    } else if (error.request) {
+      toast.error("API server is not reachable.");
+    } else {
+      toast.error(error.message || "Unknown error");
+    }
+  }
+  });
+
+
   const handleSubmit = async (e) => {
     debugger;
     e.preventDefault();
@@ -58,43 +96,10 @@ const Login = () => {
       return;
     }
 
-    const LoginAPI = async () => {
-      debugger;
-      setLoggingIn(true);
-      try {
-        const response = await api.post(
-          "Login/Login",
-          {
-            userName: formData.username,
-            password: formData.password,
-          },
-          {
-            headers: {
-              "Content-Type": "application/json",
-            },
-          }
-        );
-
-        if (response.data.success && response.status === 200) {
-          console.log(response.data.data.token);
-          setuser({
-            TokenExpires: response.data.data.expires,
-            UserId: 1,
-            Roles: [1, 2, 3],
-          });
-
-          navigate("/Home",{replace:true});
-        }
-      } catch (err) {
-        const res = err?.response;
-
-        APIErrors({ response: res });
-      } finally {
-        setLoggingIn(false);
-      }
-    };
-
-    await LoginAPI();
+      loginMutation.mutate({
+        username:formData.username,
+        password:formData.password
+      });
   };
 
   const TooglePassword = () => {

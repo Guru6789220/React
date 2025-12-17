@@ -10,6 +10,10 @@ import { AuthContext } from "./Context/AuthContext.jsx";
 import Parent from "./Pages/Parent.jsx";
 import Timmer from "./Pages/Timmer.jsx";
 import Parent1 from "./Pages/Parent1.jsx";
+import TODO from "./Pages/TodoList.jsx";
+import Search from "./Pages/Search.jsx";
+import Pagination from "./Pages/Pagination.jsx";
+import InfinatesQuery from "./Pages/InfinatesQuery.jsx";
 
 function App() {
   const { user, logout } = useContext(AuthContext);
@@ -43,6 +47,10 @@ function App() {
         <Route path="/Timmer" element={<Timmer />} />
         <Route path="/Home" element={<Home />} />
         <Route path="Parent1" element={<Parent1 />} />
+        <Route path="TODO" element={<TODO />} />
+        <Route path="Search" element={<Search/>}/>
+        <Route path="Pagination" element={<Pagination/>}/>
+        <Route path="Infinate" element={<InfinatesQuery/>}/>
       </Routes>
 
       <ToastContainer

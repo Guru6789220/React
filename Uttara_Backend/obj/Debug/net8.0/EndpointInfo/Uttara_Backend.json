@@ -111,7 +111,8 @@
     "schemas": {
       "ForgetPassword": {
         "required": [
-          "emailId"
+          "emailId",
+          "newPassword"
         ],
         "type": "object",
         "properties": {
@@ -121,8 +122,8 @@
             "type": "string"
           },
           "newPassword": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           }
         },
         "additionalProperties": false

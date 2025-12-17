@@ -56,6 +56,24 @@ namespace Uttara_Backend.Controllers
                     var res = await _loginService.Login(logindata);
                     if(res.Success)
                     {
+                        Response.Cookies.Append("accessToken",
+                            res.Data.Token,
+                                new CookieOptions
+                                {
+                                    HttpOnly = true,
+                                    Secure = true,
+                                    SameSite=SameSiteMode.None,
+                                    Expires = DateTime.UtcNow.AddHours(4)
+                                }
+                            );
+
+                        AuthDTO NewAuthDto = new AuthDTO
+                        {
+                            UserName = res.Data.UserName,
+                            Role = res.Data.Role,
+                            Expires = DateTime.Now.AddMinutes(1).ToString()
+                        };
+                        res.Data = NewAuthDto;
                         
                         return Ok(res);
                     }

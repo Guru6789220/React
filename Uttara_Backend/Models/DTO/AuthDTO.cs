@@ -10,5 +10,7 @@ namespace Uttara_Backend.Models.DTO
         public string Role { get; set; }
         [Required]
         public string Token { get; set; }
+
+        public string? Expires { get; set; }
     }
 }
