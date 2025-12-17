@@ -16,5 +16,7 @@ namespace Uttara_Backend.DataAccess
         }
 
         public DbSet<Users> Users { get; set; }
+
+        public DbSet<TodoList> TodoList { get; set; }
     }
 }

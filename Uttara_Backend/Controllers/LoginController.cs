@@ -71,7 +71,7 @@ namespace Uttara_Backend.Controllers
                         {
                             UserName = res.Data.UserName,
                             Role = res.Data.Role,
-                            Expires = DateTime.Now.AddMinutes(1).ToString()
+                            Expires = DateTime.Now.AddHours(1).ToString()
                         };
                         res.Data = NewAuthDto;
                         
