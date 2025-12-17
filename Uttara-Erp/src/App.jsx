@@ -14,6 +14,7 @@ import TODO from "./Pages/TodoList.jsx";
 import Search from "./Pages/Search.jsx";
 import Pagination from "./Pages/Pagination.jsx";
 import InfinatesQuery from "./Pages/InfinatesQuery.jsx";
+import TableSearch from "./Pages/TableSearch.jsx";
 
 function App() {
   const { user, logout } = useContext(AuthContext);
@@ -51,6 +52,7 @@ function App() {
         <Route path="Search" element={<Search/>}/>
         <Route path="Pagination" element={<Pagination/>}/>
         <Route path="Infinate" element={<InfinatesQuery/>}/>
+        <Route path="Table" element={<TableSearch/>}/>
       </Routes>
 
       <ToastContainer
